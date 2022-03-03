@@ -40,6 +40,7 @@ pipeline {
                                     passwordVariable: PWD)
                   ]) {
                     sh "some script ${USER} ${PWD}"
+                  }
               }
         }
     }
