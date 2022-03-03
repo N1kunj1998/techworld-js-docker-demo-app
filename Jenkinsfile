@@ -39,7 +39,7 @@ pipeline {
                                     usernameVariable: USER,
                                     passwordVariable: PWD)
                   ]) {
-                    sh "some script ${USER} ${PWD}"
+                    echo " ${USER} ${PWD}"
                   }
               }
         }
