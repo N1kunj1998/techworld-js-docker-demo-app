@@ -34,13 +34,13 @@ pipeline {
         stage('deploy') {
               steps {
                 echo "deploying the application version ${params.VERSION}"
-                  withCredentials([
-                    usernamePassword(credentials: 'github-credentials',
-                                    usernameVariable: USER,
-                                    passwordVariable: PWD)
-                  ]) {
-                    echo " ${USER} ${PWD}"
-                  }
+//                   withCredentials([
+//                     usernamePassword(credentials: 'github-credentials',
+//                                     usernameVariable: USER,
+//                                     passwordVariable: PWD)
+//                   ]) {
+//                     echo " ${USER} ${PWD}"
+//                   }
               }
         }
     }
